@@ -36,8 +36,5 @@ public class Ball : MonoBehaviour
         }
     }
 
-    private void LockBallToPaddle()
-    {
-        transform.position = _paddle.transform.position + (Vector3) _paddleToBallVector;
-    }
+    private void LockBallToPaddle() => transform.position = _paddle.transform.position + (Vector3) _paddleToBallVector;
 }
